@@ -1,32 +1,32 @@
 function clearOutPut() {
-    $("#output").innerHTML="0"
+    $("#output").innerHTML = "0"
 }
 
 function removeZero() {
-    let value =$("#output").innerHTML;
-    if(value=="0") {
+    let value = $("#output").innerHTML;
+    if (value == "0") {
         value = " "
-        $("#output").innerHTML=value;
+        $("#output").innerHTML = value;
     }
 }
 
 function perc() {
     removeZero()
-    let value =$("#output").innerHTML;
-    value = value/100
-    $("#output").innerHTML=value;
+    let value = $("#output").innerHTML;
+    value = value / 100
+    $("#output").innerHTML = value;
 }
 
 function fordisplay(myvalue) {
     removeZero()
-    $("#output").innerHTML+=myvalue
+    $("#output").innerHTML += myvalue
 }
 
 function solve() {
     removeZero()
-    let equation =$("#output").innerHTML;
+    let equation = $("#output").innerHTML;
     let solved = eval(equation)
-    $("#output").innerHTML=solved;
+    $("#output").innerHTML = solved;
 }
 
 function $(e) {
