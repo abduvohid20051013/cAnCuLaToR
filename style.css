@@ -1,0 +1,140 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.mainbox {
+    overflow: hidden;
+    width: 400px;
+    height: 550px;
+    background-color: rgb(20, 19, 19);
+    border-radius: 10px;
+}
+
+.header {
+    width: 100%;
+    height: 25%;
+}
+
+.inputbox {
+    width: 100%;
+    height: 75%;
+}
+
+.elementbox {
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-bottom: 2px;
+    width: 100%;
+    height: 20%;
+    display: flex;
+}
+
+.elementbox .calcitem {
+    width: 25%;
+    border: none;
+    height: 100%;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+}
+
+.elementbox .calcitem:active {
+    transform: scale(0.97);
+    border-radius: 7px;
+}
+
+.elementbox .calcitem:hover {
+    cursor: pointer;
+}
+
+.calcitem {
+    font-size: 20px;
+    user-select: none;
+    color: white;
+    font-weight: bolder;
+}
+
+.lightblack {
+    background-color: rgb(34, 33, 33);
+}
+
+.orangelight {
+    background-color: rgb(255, 165, 55);
+}
+
+.verylightblack {
+    background-color: rgb(51, 50, 50); 
+}
+
+.fiftywidth {
+    border: none;
+    outline: none;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: 0.2s;
+}
+
+.fiftywidth:active {
+    transform: scale(0.99);
+    border-radius: 7px;
+}
+
+.fiftywidth:hover {
+    cursor: pointer;
+}
+
+.fiftywidth {
+    font-size: 20px;
+    color: white;
+    user-select: none;
+    font-weight: bolder;
+}
+
+.rightfreeplace {
+    margin-right: 2px;
+}
+
+.rightradius {
+    border-bottom-right-radius: 8px;
+}
+
+.leftradius {
+    border-bottom-left-radius: 8px;
+}
+
+.mainlist {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.mainlist li {
+    padding-right: 10px;
+    width: 100%;
+}
+
+.maintext {
+    width: 100%;
+    display: block;
+    text-align: end;
+    color: white;
+    font-size: 45px;
+    font-weight: bolder;
+}
